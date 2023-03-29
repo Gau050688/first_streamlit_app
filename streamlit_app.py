@@ -44,6 +44,7 @@ streamlit.header("The fruit load list contains:")
 streamlit.dataframe(my_data_rows)
 
 
-streamlit.header("What fruit would you like to add?")
-my_data_rows = my_data_rows.set_index(0)
-add_my_fruit = streamlit.multiselect("Pick some fruits:", list(my_data_rows.index),['jackfruit'])
+streamlit.text("What fruit would you like to add?")
+#my_data_rows = my_data_rows.set_index(0)
+streamlit.multiselect("Pick some fruits:", list(my_data_rows),['jackfruit'])
+
